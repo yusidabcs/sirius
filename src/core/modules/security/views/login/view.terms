@@ -1,0 +1,13 @@
+page_header = User Login
+username_label = Username/Email:
+username_placeholder = Enter your Username or Email
+password_label = Password:
+password_placeholder = Enter your Password
+login_button = Login Now
+forgot_button = Reset Password
+remember_label = Remember me
+register_link = "Register Now"
+;
+error_legend = Errors
+general_label = Login Error:
+redirect_msg = You have been redirected by

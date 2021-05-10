@@ -1,0 +1,7 @@
+checklist_question_heading = "Question"
+checklist_answer_heading = "Your Answer"
+answer_button_yes = "YES"
+answer_button_no = "NO"
+answer_more_info = "Please give details:"
+go_back = "Go Back"
+save_checklist = "Save Checklist"

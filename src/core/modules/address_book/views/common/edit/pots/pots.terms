@@ -1,0 +1,12 @@
+; Address Book Address
+pots_heading = Telephone
+pots_heading_main = Current Land and Mobile Contacts
+pots_type = Type
+pots_country = Country
+pots_mobile = Mobile/Cell Phone
+pots_landline = Landline
+pots_number = Number
+pots_private = Private Number
+pots_whatsapp = 'WhatsApp!'
+pots_viber = Viber
+pots_add = Add Telephone Number

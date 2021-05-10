@@ -1,0 +1,29 @@
+header=Offer Letter Tracker
+create_new="Add New Report"
+address_book_search="Search Address Book"
+create_security="Create Offer Letter Report"
+tr_name=Name
+tr_job_application=Job
+tr_status=Status
+tr_allocated_on="Allocated On"
+tr_warning_level=Warning Level
+tr_option="Action"
+label_address_book=Select Address Book
+label_level=Select Level
+address_book_email_not_found=Address book not found
+
+request_ol=Upload Offer Letter
+ol_date=Requested Date
+
+acceptance_ol=Offer Letter Acceptance
+ol_acceptance_date=Offer Letter Acceptance Date
+personal_data=Update Personal Data Form
+
+update_endorsement=Update Endorsement
+table_select_status=Select Status
+
+loe_modal=Input LOE
+loe_date=LOE released date
+deploy_date=Deployment Date
+deploy_date_end=Deployment Date End
+loe_file=LOE File

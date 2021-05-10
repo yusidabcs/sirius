@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<SCHEMA CHARSET="utf8" ENGINE="InnoDB">
+<TABLE NAME="address_book_email" LOCATION="local">
+<STRUCTURE>CREATE TABLE `address_book_email` (
+  `address_book_id` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `always_cc` tinyint(1) NOT NULL DEFAULT '0',
+  `contact_allowed` tinyint(1) NOT NULL DEFAULT '1',
+  `sequence` tinyint(4) NOT NULL DEFAULT '0',
+  `created_on` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `created_by` int(11) NOT NULL,
+  `modified_on` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `modified_by` int(11) NOT NULL,
+  PRIMARY KEY (`address_book_id`,`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8</STRUCTURE>
+<FIELD NAME="address_book_id">
+<TYPE>int(11)</TYPE>
+<NULL>NO</NULL>
+<KEY>PRI</KEY>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="email">
+<TYPE>varchar(255)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<KEY>PRI</KEY>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="name">
+<TYPE>varchar(100)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="always_cc">
+<TYPE>tinyint(1)</TYPE>
+<NULL>NO</NULL>
+<DEFAULT>0</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="contact_allowed">
+<TYPE>tinyint(1)</TYPE>
+<NULL>NO</NULL>
+<DEFAULT>1</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="sequence">
+<TYPE>tinyint(4)</TYPE>
+<NULL>NO</NULL>
+<DEFAULT>0</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="created_on">
+<TYPE>timestamp</TYPE>
+<NULL>NO</NULL>
+<DEFAULT>0000-00-00 00:00:00</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="created_by">
+<TYPE>int(11)</TYPE>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="modified_on">
+<TYPE>timestamp</TYPE>
+<NULL>NO</NULL>
+<DEFAULT>0000-00-00 00:00:00</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="modified_by">
+<TYPE>int(11)</TYPE>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+</TABLE>
+</SCHEMA>

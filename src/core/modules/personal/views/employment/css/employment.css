@@ -1,0 +1,38 @@
+input[type='text'] {
+	width: 100%;
+}
+
+/* employment hide at the start */
+#employment_croppie_wrap_portrait {
+	display: none;
+	width: 700px;
+    height: 920px;
+    margin: 0 auto;
+}
+
+#employment_croppie_wrap_landscape {
+	display: none;
+	width: 900px;
+    height: 720px;
+    margin: 0 auto;
+}
+
+/* hide the wrap number */
+span.value {
+	display: none !important;
+}
+
+.iow-ck-button input:hover + span.employment {
+    background-color:#e0efe0;
+}
+
+.iow-ck-button input:checked + span.employment {
+    background-color:#119911;
+    color:#fff;
+}
+
+.iow-ck-button input:checked:hover + span.employment {
+    background-color:#11cc11;
+    color:#fff;
+}
+

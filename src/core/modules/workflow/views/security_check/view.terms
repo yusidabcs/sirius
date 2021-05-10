@@ -1,0 +1,13 @@
+header=Interview Security Tracker
+create_new="Add Interview Security"
+address_book_search="Search Checker"
+create_security="Create Interview Security"
+tr_name=Name
+tr_job_application=Job
+tr_status=Status
+label_checker=Select Checker
+label_principal=Select Principal
+label_country=Select Country
+tr_warning_level=Warning Level
+table_select_status=All Status
+table_select_level=All Level

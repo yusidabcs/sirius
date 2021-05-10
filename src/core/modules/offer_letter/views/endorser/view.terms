@@ -1,0 +1,12 @@
+header=Offer Letter Endorser
+create_new="Add Endorser"
+address_book_search="Search Endorser"
+job_search="Search Job"
+create_security="Create Offer Letter Endorser"
+tr_job=Job
+tr_endorser=Endorser
+tr_day=Day
+label_checker=Select Checker
+label_job=Select Job
+address_book_email_not_found=Address book not found
+label_day=Allowance Days

@@ -1,0 +1,119 @@
+Options +FollowSymLinks
+
+#ADDED BY MO 26 DECEMBER 2018
+<IfModule mod_headers.c>
+Header always set X-FRAME-OPTIONS "SAMEORIGIN"
+Header edit Set-Cookie ^(.*)$ $1;HttpOnly;Secure
+</IfModule>
+
+#ADDED BY MO 24 DECEMBER 2018
+<IfModule mod_deflate.c>
+   # compress text, html, javascript, css, xml
+   AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/xml application/xhtml+xml text/javascript application/javascript application/x-javascript
+</IfModule>
+
+# ADDED BY MO 24 DECEMBER 2018
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 years"
+  ExpiresByType image/jpeg "access plus 1 years"
+  ExpiresByType image/gif "access plus 1 years"
+  ExpiresByType image/png "access plus 1 years"
+  ExpiresByType image/x-icon "access plus 1 years"
+  ExpiresByType application/pdf "access plus 1 year"
+  ExpiresByType text/css "access plus 1 days"
+  ExpiresByType text/x-javascript "access plus 4 hours"
+  ExpiresDefault "access plus 2 days"
+</IfModule>
+
+RewriteEngine on
+
+# LOOSE THE WWW BY MO 25 DECEMBER 2018
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# MAKE ALL URLS finish  MO 25 DECEMBER 2018
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+#
+# Forbid access to PHP and INI files in subfolders.
+RewriteCond %{REQUEST_URI} ^.+/.*(\.php)$
+RewriteCond %{REQUEST_URI} !^.+/.*(captcha\.php)$
+RewriteRule ^ index.php [F]
+#
+RewriteCond %{REQUEST_URI} ^.+/.*(\.ini)$
+RewriteRule ^ index.php [F]
+#
+# Now Rewrite for Program
+#
+# Sitemap and Robot redirect
+#
+RewriteRule ^sitemap.txt$ /sitemaps/sitemap.txt [L]
+RewriteRule ^sitemap.gz$ /sitemaps/sitemap.gz [L]
+RewriteRule ^sitemap.xml$ /sitemaps/sitemap.xml [L]
+RewriteRule ^robots.txt$ /sitemaps/robots.txt [L]
+#
+# fm 
+#
+# images
+RewriteRule ^fm/image/([0-9a-zA-Z_-]+)/(thumb|page|large|original)/([\w,\s-]+\.[\w]{3,4})$ /fileman.php?t=image&f=$1&s=$2&n=$3 [L]
+RewriteRule ^fm/image/([0-9a-zA-Z_-]+)/(thumb|page|large|original)/$ /fileman.php?t=image&f=$1&s=$2 [L]
+RewriteRule ^fm/image/([0-9a-zA-Z_-]+)/(thumb|page|large|original)$ /fileman.php?t=image&f=$1&s=$2 [L]
+RewriteRule ^fm/image/([0-9a-zA-Z_-]+)/([\w,\s-]+\.[\w]{3,4})$ /fileman.php?t=image&f=$1&n=$2 [L]
+RewriteRule ^fm/image/([0-9a-zA-Z_-]+)/$ /fileman.php?t=image&f=$1 [L]
+RewriteRule ^fm/image/([0-9a-zA-Z_-]+)$ /fileman.php?t=image&f=$1 [L]
+#
+# files
+RewriteRule ^fm/file/([0-9a-zA-Z_-]+)/([\w,\s-]+\.[\w]{3,4})$ /fileman.php?t=file&f=$1&n=$2 [L]
+RewriteRule ^fm/file/([0-9a-zA-Z_-]+)/$ /fileman.php?t=file&f=$1 [L]
+RewriteRule ^fm/file/([0-9a-zA-Z_-]+)$ /fileman.php?t=file&f=$1 [L]
+#
+# icons
+RewriteRule ^fm/icon/([0-9a-zA-Z_-]+)/([0-9a-zA-Z_-]+)/([\w,\s-]+\.[\w]{3,4})$ /fileman.php?t=icon&f=$1&s=$2&n=$3 [L]
+RewriteRule ^fm/icon/([0-9a-zA-Z_-]+)/([0-9a-zA-Z_-]+)/$ /fileman.php?t=icon&f=$1&s=$2 [L]
+RewriteRule ^fm/icon/([0-9a-zA-Z_-]+)/([0-9a-zA-Z_-]+)$ /fileman.php?t=icon&f=$1&s=$2 [L]
+RewriteRule ^fm/icon/([0-9a-zA-Z_-]+)/([\w,\s-]+\.[\w]{3,4})$ /fileman.php?t=icon&f=$1&n=$2 [L]
+RewriteRule ^fm/icon/([0-9a-zA-Z_-]+)/$ /fileman.php?t=icon&f=$1 [L]
+RewriteRule ^fm/icon/([0-9a-zA-Z_-]+)$ /fileman.php?t=icon&f=$1 [L]
+#
+# ab
+#
+RewriteRule ^ab/([a-z]+)/([0-9a-zA-Z_-]+)/([\w,\s-]+)$ /fileman_ab.php?t=$1&f=$2&n=$3 [L]
+RewriteRule ^ab/([a-z]+)/([0-9a-zA-Z_-]+)$ /fileman_ab.php?t=$1&f=$2 [L]
+#
+# ab public
+#
+RewriteRule ^ao/([a-z]+)/([0-9a-zA-Z_-]+)$ /fileman_ao.php?t=$1&f=$2 [L]
+#
+# email tracker
+#
+RewriteRule ^email-tracker/([0-9a-zA-Z_-]+)$ /email_tracker.php?t=$1 [L]
+#
+# secure file
+#
+RewriteRule ^secure_file/([a-z]+)/([0-9a-zA-Z_-]+)$ /secure_file.php?t=$1&h=$2 [L]
+#
+# ajax files
+#
+RewriteRule ^ajax/([0-9a-zA-Z_-]+)$ /ajax.php?f=$1 [L]
+RewriteRule ^ajax/([0-9a-zA-Z_-]+)/(.*)$ /ajax.php?f=$1&o=$2 [L]
+#
+# other files at first level
+#
+RewriteRule ^([0-9a-zA-Z_-]+)$ /index.php?l=$1 [L]
+RewriteRule ^([0-9a-zA-Z_-]+)/$ /index.php?l=$1 [L]
+#
+#
+# All other stuff rewrite unless expressly removed
+#
+# catch everything else and send it to index
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([0-9a-zA-Z_-]+)/(.*)$ /index.php?l=$1&o=$2 [L]
+#
+# And all other files
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_URI} !^/lib/[0-9a-zA-Z_-]+/(.*)
+RewriteCond %{REQUEST_URI} ^/(.*)/(.*)
+RewriteRule ^ index.php [F]

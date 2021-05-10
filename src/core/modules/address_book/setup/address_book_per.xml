@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<SCHEMA CHARSET="utf8" ENGINE="InnoDB">
+<TABLE NAME="address_book_per" LOCATION="local">
+<STRUCTURE>CREATE TABLE `address_book_per` (
+  `address_book_id` int(11) NOT NULL,
+  `title` varchar(10) NOT NULL,
+  `middle_names` varchar(255) NOT NULL,
+  `dob` date NOT NULL DEFAULT '0000-00-00',
+  `sex` enum('not specified','male','female') NOT NULL DEFAULT 'not specified',
+  `created_on` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `created_by` int(11) NOT NULL,
+  `modified_on` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `modified_by` int(11) NOT NULL,
+  PRIMARY KEY (`address_book_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8</STRUCTURE>
+<FIELD NAME="address_book_id">
+<TYPE>int(11)</TYPE>
+<NULL>NO</NULL>
+<KEY>PRI</KEY>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="title">
+<TYPE>varchar(10)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="middle_names">
+<TYPE>varchar(255)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="dob">
+<TYPE>date</TYPE>
+<NULL>NO</NULL>
+<DEFAULT>0000-00-00</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="sex">
+<TYPE>enum('not specified','male','female')</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<DEFAULT>not specified</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="created_on">
+<TYPE>timestamp</TYPE>
+<NULL>NO</NULL>
+<DEFAULT>0000-00-00 00:00:00</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="created_by">
+<TYPE>int(11)</TYPE>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="modified_on">
+<TYPE>timestamp</TYPE>
+<NULL>NO</NULL>
+<DEFAULT>0000-00-00 00:00:00</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="modified_by">
+<TYPE>int(11)</TYPE>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+</TABLE>
+</SCHEMA>

@@ -1,0 +1,9 @@
+header=Interview Security Report
+create_new="Add Interview Security Report"
+address_book_search="Search Address Book"
+create_security="Create Interview Security Report"
+tr_name=Name
+tr_level=Level
+label_address_book=Select Address Book
+label_level=Select Principal
+address_book_email_not_found=Address book not found

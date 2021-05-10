@@ -1,0 +1,10 @@
+header=Interview Security
+create_new="Add Interview Security"
+address_book_search="Search Checker"
+create_security="Create Interview Security"
+tr_principal=Principal
+tr_country=Country
+tr_checker=Checker
+label_checker=Select Checker
+label_principal=Select Principal
+label_country=Select Country

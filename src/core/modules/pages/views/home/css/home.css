@@ -1,0 +1,152 @@
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 72px);
+    background: linear-gradient(to bottom,rgba(255,255,255,.2) 0,rgba(66,133,244,.5) 100%),url(../img/bg-masthead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+}
+
+@media (min-width: 992px){
+header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+}
+
+}
+
+section.article {
+    min-height: 200px;
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+section.article::after {
+    content: "";
+    opacity: 0.5;;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.img-frame {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 3px 13px rgba(0,0,0,0.32);
+}
+
+.img-frame img {
+    position: absolute;
+    top: -15%;
+}
+
+.carousel .img-frame {
+    width: 80px;
+    height: 80px;
+}
+
+.image-article {
+    width: auto;
+    display: inline-block;
+}
+
+.image-article .image-title {
+    font-weight: 700;
+    text-align: center;
+}
+
+.clear-right {
+    clear: right;
+}
+
+.clear-left {
+    clear: left;
+}
+
+.banner-top, .banner {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-size: 100%!important;
+    background-position: center center!important;
+    background-repeat: no-repeat!important;
+}
+
+.banner {
+    height: 380px;
+}
+
+div.layer {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.45);
+    position: absolute;
+}
+
+.showcase-text {
+    flex-direction: column;
+    padding: 6.5rem;
+    font-size: 1.17rem;
+}
+
+.showcase-img {
+    min-height: 430px;
+    background-size: 100%!important;
+    background-repeat: no-repeat!important;
+}
+
+.testimonial_subtitle{
+    color: #0aaa7a;
+    font-size: 12px;
+}
+  .testimonial_btn{
+    background-color: #373d4b !important;
+    color: #fff !important;
+ }
+ .seprator {
+    height: 2px;
+    width: 56px;
+    background-color: #0aaa7a;
+    margin: 7px 0 10px 0;
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat!important;
+}
+
+.counter-box{
+    padding: 30px 15px;
+}
+.medium-icon {
+    font-size: 30px !important;
+    margin-bottom: 5px !important
+}
+
+span.counter2 {
+    font-size: 30px;
+    color: #000;
+    line-height: 40px;
+    display: block;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 2px
+}
+.counter-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase
+}

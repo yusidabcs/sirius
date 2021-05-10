@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<SCHEMA CHARSET="utf8" ENGINE="InnoDB">
+<TABLE NAME="address_book_internet" LOCATION="local">
+<STRUCTURE>CREATE TABLE `address_book_internet` (
+  `address_book_id` int(11) NOT NULL,
+  `type` enum('skype','facebook','youtube-video','youtube-channel','twitter','linked-in','google-plus','instagram') NOT NULL,
+  `id` varchar(255) NOT NULL,
+  `sequence` tinyint(4) NOT NULL DEFAULT '0',
+  `created_on` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `created_by` int(11) NOT NULL,
+  KEY `address_book_id` (`address_book_id`),
+  KEY `type` (`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8</STRUCTURE>
+<FIELD NAME="address_book_id">
+<TYPE>int(11)</TYPE>
+<NULL>NO</NULL>
+<KEY>MUL</KEY>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="type">
+<TYPE>enum('skype','facebook','youtube-video','youtube-channel','twitter','linked-in','google-plus','instagram')</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<KEY>MUL</KEY>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="id">
+<TYPE>varchar(255)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="sequence">
+<TYPE>tinyint(4)</TYPE>
+<NULL>NO</NULL>
+<DEFAULT>0</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="created_on">
+<TYPE>timestamp</TYPE>
+<NULL>NO</NULL>
+<DEFAULT>0000-00-00 00:00:00</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="created_by">
+<TYPE>int(11)</TYPE>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+</TABLE>
+</SCHEMA>

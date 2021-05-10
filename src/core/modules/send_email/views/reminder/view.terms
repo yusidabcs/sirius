@@ -1,0 +1,15 @@
+page_header = Reminders
+banner_heading = Banner Image
+banner_heading_main = Upload a New Banner
+banner_existing_image_label = Current Image
+banner_input_label = Choose a banner image
+banner_result_button = Review Image
+button_add_submit = Update
+table_select_all_partner = All Partner
+table_partner_filter = Filter by Partner
+table_select_all_country = All Country
+table_country_filter = Filter by Country
+table_select_all = All Status
+table_status_filter = Filter by Status
+filter_job_category = All Job Category
+filter_job_category_label = FIlter by Job Category

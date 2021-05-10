@@ -1,0 +1,33 @@
+input[type='text'] {
+	width: 100%;
+}
+
+/* vaccination hide at the start */
+#vaccination_croppie_wrap_portrait {
+	display: none;
+	width: 700px;
+    height: 920px;
+    margin: 0 auto;
+}
+
+#vaccination_croppie_wrap_landscape {
+	display: none;
+	width: 900px;
+    height: 720px;
+    margin: 0 auto;
+}
+
+.iow-ck-button input:hover + span.vaccination {
+    background-color:#e0efe0;
+}
+
+.iow-ck-button input:checked + span.vaccination {
+    background-color:#119911;
+    color:#fff;
+}
+
+.iow-ck-button input:checked:hover + span.vaccination {
+    background-color:#11cc11;
+    color:#fff;
+}
+

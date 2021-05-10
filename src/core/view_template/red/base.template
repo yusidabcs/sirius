@@ -1,0 +1,11 @@
+htm:
+php:pageNav
+htm:
+htm:<!--Main layout-->
+htm:<main>
+mod:mainSection
+htm:</main>
+htm:<!--Main layout-->
+htm:
+php:pageFooter
+htm:

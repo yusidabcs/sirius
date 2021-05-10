@@ -1,0 +1,79 @@
+/* TOP Header */
+.primary-color, ul.stepper li.active a .circle, ul.stepper li.completed a .circle {
+    background-color: #339 !important;
+}
+
+/* Icon and text-primary */
+.text-primary,.text-info {
+    color: #339 !important;
+}
+
+/* Card Header */
+ .info-color {
+    background-color: #339 !important;
+} 
+
+/* Card  */
+.blue-gradient {
+    background: linear-gradient(40deg, #45cafc, #339) !important;
+}
+
+/* button outline  */
+.btn-outline-info,.btn-outline-info:hover,.btn-outline-info:active:after,.btn-outline-info:focus,.btn-outline-info:checked,.btn-outline-info:after {
+    color: #339 !important;
+    border: 2px solid #339 !important;
+}
+
+.btn-primary,.btn-info {
+    background-color: #339 !important;
+    color: #CFCFCF !important;
+}
+
+.btn-info:hover {
+    color: #FFFFFF!important;
+}
+
+/* "a" tag */
+a {
+    color: #339;
+}
+
+/* Gradient Card Header */
+.blue-gradient {
+    background: linear-gradient(40deg, #45cafc, #339) !important;
+}
+
+/* Modal Header */
+.modal-dialog.modal-notify.modal-info .modal-header {
+    background-color: #339;
+}
+
+/* Pagination Table */
+.pagination .page-item.active .page-link,.pagination .page-item.active .page-link:hover{
+    background-color: #339;
+}
+
+/* left tab */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #339;
+}
+
+/* badge info */
+.badge-info {
+    background-color : #339 !important;
+}
+
+/* Dropdown */
+.dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover, .dropdown .dropdown-menu.dropdown-primary .dropdown-item:active, .dropdown .dropdown-menu.dropdown-primary .dropdown-item.active, .dropup .dropdown-menu.dropdown-primary .dropdown-item:hover, .dropup .dropdown-menu.dropdown-primary .dropdown-item:active, .dropup .dropdown-menu.dropdown-primary .dropdown-item.active, .dropleft .dropdown-menu.dropdown-primary .dropdown-item:hover, .dropleft .dropdown-menu.dropdown-primary .dropdown-item:active, .dropleft .dropdown-menu.dropdown-primary .dropdown-item.active, .dropright .dropdown-menu.dropdown-primary .dropdown-item:hover, .dropright .dropdown-menu.dropdown-primary .dropdown-item:active, .dropright .dropdown-menu.dropdown-primary .dropdown-item.active {
+    background-color : #339 !important;
+}
+
+.navbar-nav>.nav-item>.dropdown-menu>.dropdown-item:hover {
+    background-color : #339 !important;
+}
+
+
+/* bg-info / heading*/
+/* .bg-info {
+    background-color: #339 !important;
+} */

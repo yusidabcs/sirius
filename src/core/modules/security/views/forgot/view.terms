@@ -1,0 +1,16 @@
+page_header = Password Recovery
+username_label = Username/Email:
+username_placeholder = Enter your Username or Email
+recover_button = Recover Password
+;
+confirm_heading = Email Sent
+confirm_information = '<p>An email has been sent to <strong><span id="confirm_email"></span></strong>.</p><p>You have 4 hours to use the link in the email to reset your password before it expires.</p>'
+;
+failed_heading = "Unknown!"
+failed_information = "The information provided does not match any user on this system."
+;
+captcha_heading = "Bad Confirmation Code"
+captcha_information = "Incorrect confirmation code."
+;
+reset_button = Try Again
+error_legend = Errors

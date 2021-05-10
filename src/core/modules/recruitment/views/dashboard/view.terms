@@ -1,0 +1,8 @@
+page_header = "Recruitment Dashboard"
+job_applicant = "New Job Applied"
+review_request = "Request Verification"
+rejected = "Total Rejected Candidate"
+accepted_job = "Total Accepted Job"
+total_interview = "Total Interview Ready"
+total_apply = "Total Apply Job"
+view_details = "View Details >>"

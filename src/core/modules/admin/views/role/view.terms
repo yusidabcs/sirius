@@ -1,0 +1,8 @@
+page_header = "Role & Permission Management"
+; system config
+tab_role = "Role"
+heading_role = "Role List"
+heading_permission = "Permission"
+; site config
+tab_permission = "Permission"
+button_create_role = "Create New Role"

@@ -1,0 +1,27 @@
+.iow-ck-button input:hover + span.yes {
+    background-color:#efE0E0;
+}
+
+.iow-ck-button input:checked + span.yes {
+    background-color:#991111;
+    color:#fff;
+}
+
+.iow-ck-button input:checked:hover + span.yes {
+    background-color:#cc1111;
+    color:#fff;
+}
+
+.iow-ck-button input:hover + span.no {
+    background-color:#e0efe0;
+}
+
+.iow-ck-button input:checked + span.no {
+    background-color:#119911;
+    color:#fff;
+}
+
+.iow-ck-button input:checked:hover + span.no {
+    background-color:#11cc11;
+    color:#fff;
+}

@@ -1,0 +1,9 @@
+header=Offer Letter Report
+create_new="Add New Report"
+address_book_search="Search Address Book"
+create_security="Create Offer Letter Report"
+tr_name=Name
+tr_level=Level
+label_address_book=Select Address Book
+label_level=Select Level
+address_book_email_not_found=Address book not found

@@ -1,0 +1,53 @@
+<?php
+namespace core\modules\interview\models\security_report;
+
+/**
+ * Final model class.
+ *
+ * @final
+ * @package 	interview
+ * @author		Martin O'Dee <martin@iow.com.au>
+ * @copyright	Martin O'Dee 16 October 2019
+ */
+final class model extends \core\app\classes\module_base\module_model {
+
+    protected $model_name = 'security_report';
+    protected $processPost = true;
+
+    public function __construct()
+    {
+        parent::__construct();
+        return;
+    }
+
+    //required function
+    protected function main()
+    {
+        $this->authorize();
+        $this->levels = ['team','supervisor','management'];
+        $this->defaultView();
+        return;
+    }
+
+    protected function defaultView()
+    {
+        $this->view_variables_obj->setViewTemplate('security_report');
+        return;
+    }
+
+    //required function
+    protected function setViewVariables()
+    {
+        $this->view_variables_obj->useDatatable();
+        $this->view_variables_obj->useSweetAlert();
+
+
+        //POST Variable
+        $this->view_variables_obj->addViewVariables('base_url',$this->baseURL);
+        $this->view_variables_obj->addViewVariables('levels',$this->levels);
+
+        return;
+    }
+
+}
+?>

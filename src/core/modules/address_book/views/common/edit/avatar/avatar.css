@@ -1,0 +1,16 @@
+/* hide the avatar for a start */
+#avatar_croppie_wrap {
+	display: none;
+	max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Sweet alert modifications */
+.sweet-alert {
+    width: auto;
+    max-width: 85%;
+}
+
+span.thumb {
+	display: none;
+}

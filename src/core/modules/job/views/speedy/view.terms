@@ -1,0 +1,22 @@
+legend_add = "Add New Job"
+legend_edit = "Edit Job"
+legend_error = "Submit Errors"
+local_job_header="List Job Speedy"
+create_job="Add New Job"
+job_speedy_code="Job Code (must be 3-4 character)"
+job_title="Job Title"
+short_description="Short Description"
+min_requirement = Minimum Requirement
+min_experience = Minimum Work Experience
+min_education = Minimum Education
+stcw_req = STCW Required?
+min_english_experience = Min English Experience
+min_salary = Min Salary
+max_salary = Max Salary
+job_speedy_category_id = Job Category
+job_category=Job Category
+table_select_please="Please Select"
+table_category_filter= "Filter by Category"
+;
+import_job=Import Job Speedy
+input_job_master_file=Input Excel File

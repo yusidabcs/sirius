@@ -1,0 +1,4 @@
+page_header = "Confirm Logout"
+logout_button = "Log Off Now!"
+redirect_msg = "You have been redirected by "
+page_text = "You are currently <strong>Logged In</strong> to the system.  If you want to log off then please confirm this action."

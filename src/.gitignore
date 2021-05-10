@@ -1,0 +1,10 @@
+.idea
+cache/*
+local/*
+secure/*
+sitemaps/*
+maillog
+bitbucket-pipelines.yml
+composer*
+vendor
+._*

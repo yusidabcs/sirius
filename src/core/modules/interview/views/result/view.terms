@@ -1,0 +1,10 @@
+header=Interview Result
+start="Start Period"
+end="End Period"
+interviewer="Interviewer"
+organizer="Organizer"
+type="Type"
+status="Status"
+job="Job"
+allocation_title="Allocation Modal"
+interview_result="Interview Result Detail"

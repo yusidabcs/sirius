@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<SCHEMA CHARSET="utf8" ENGINE="InnoDB">
+<TABLE NAME="register" LOCATION="local">
+<STRUCTURE>CREATE TABLE `register` (
+  `hash` varchar(32) NOT NULL,
+  `title` varchar(10) NOT NULL,
+  `family_name` varchar(100) NOT NULL,
+  `given_name` varchar(100) NOT NULL,
+  `middle_names` varchar(255) NOT NULL,
+  `dob` date NOT NULL DEFAULT '0000-00-00',
+  `sex` enum('not specified','male','female') NOT NULL DEFAULT 'not specified',
+  `main_email` varchar(255) NOT NULL,
+  `country` varchar(2) NOT NULL,
+  `created_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`hash`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8</STRUCTURE>
+<FIELD NAME="hash">
+<TYPE>varchar(32)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<KEY>PRI</KEY>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="title">
+<TYPE>varchar(10)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="family_name">
+<TYPE>varchar(100)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="given_name">
+<TYPE>varchar(100)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="middle_names">
+<TYPE>varchar(255)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="dob">
+<TYPE>date</TYPE>
+<NULL>NO</NULL>
+<DEFAULT>0000-00-00</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="sex">
+<TYPE>enum('not specified','male','female')</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<DEFAULT>not specified</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="main_email">
+<TYPE>varchar(255)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="country">
+<TYPE>varchar(2)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="created_on">
+<TYPE>timestamp</TYPE>
+<NULL>NO</NULL>
+<DEFAULT>CURRENT_TIMESTAMP</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+</TABLE>
+</SCHEMA>

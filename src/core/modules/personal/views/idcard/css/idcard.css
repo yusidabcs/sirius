@@ -1,0 +1,45 @@
+input[type='text'] {
+	width: 100%;
+}
+
+/* idcard hide at the start */
+#idcard_croppie_wrap {
+	display: none;
+	width: 800px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/* idcard hide at the start */
+#idcard_back_croppie_wrap {
+	display: none;
+	width: 800px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/* hide the wrap number */
+span.value {
+	display: none !important;
+}
+
+.iow-ck-button input:hover + span.idcard {
+    background-color:#e0efe0;
+}
+
+.iow-ck-button input:checked + span.idcard {
+    background-color:#119911;
+    color:#fff;
+}
+
+.iow-ck-button input:checked:hover + span.idcard {
+    background-color:#11cc11;
+    color:#fff;
+}
+
+.roundBox {
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid grey;
+	border-radius: 20px;
+}

@@ -1,0 +1,234 @@
+/* spinner */
+#iow-spinner {
+	display: none;
+}
+
+#iow-spinner-fade {
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #ababab;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .70;
+    filter: alpha(opacity=80);
+}
+
+#iow-spinner-modal {
+    position: absolute;
+    padding: 10px;
+    top: 40%;
+    left: 40%;
+    width: 148px;
+    height: 148px;
+    border: 3px solid #ababab;
+    box-shadow:1px 1px 10px #ababab;
+    border-radius:20px;
+    background-color: white;
+    z-index: 1002;
+}
+
+#iow-spinner-modal img {
+	position: relative;
+	height: 128px;
+	width: 128px;
+}
+
+/* MD Pill Stuff */
+
+.pills-blue-teal .nav-item .nav-link.active {
+    background-color: #4fc3f7;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-color: #4fc3f7;}
+    to {background-color: #009688;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: #4fc3f7;}
+    to {background-color: #009688;}
+}
+
+.pills-outline-purple-anm .nav-item .nav-link.active {
+    border: 2px solid #9c27b0;
+    color: #9c27b0;
+    background-color: transparent;
+    -webkit-animation-name: outline; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: outline;
+    animation-duration: 4s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes outline {
+    from {border: 2px solid #9c27b0; color: #9c27b0;}
+    to {border: 2px solid #f48fb1; color: #f48fb1;}
+}
+
+/* Standard syntax */
+@keyframes outline {
+    from {border: 2px solid #9c27b0; color: #9c27b0;}
+    to {border: 2px solid #f48fb1; color: #f48fb1;}
+}
+
+.pills-orange-anm .nav-item .nav-link.active {
+    background-color: #ffa000 ;
+    -webkit-animation-name: orange; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: orange;
+    animation-duration: 4s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes orange {
+    from {background-color: #ffa000 ;}
+    to {background-color: #f44336;}
+}
+
+/* Standard syntax */
+@keyframes orange {
+    from {background-color: #ffa000 ;}
+    to {background-color: #f44336;}
+}
+
+.pills-rounded .nav-item .nav-link {
+border-radius: 10em;
+}
+.pills-light-purple .nav-item .nav-link.active {
+background-color: #ba68c8;
+}
+
+.pills-outline-red .nav-item .nav-link {
+border: 2px solid #fff;
+color: #666;
+background-color: transparent;
+}
+.pills-outline-red .nav-item .nav-link:hover {
+border: 2px solid #eee;
+}
+.pills-outline-red .nav-item .nav-link.active {
+border: 2px solid #f44336;
+color: #f44336;
+}
+.pills-outline-red .nav-item .nav-link.active:hover {
+border: 2px solid #f44336;
+color: #f44336;
+}
+
+.pills-outline-green .nav-item .nav-link {
+border: 2px solid #fff;
+color: #666;
+background-color: transparent;
+}
+.pills-outline-green .nav-item .nav-link:hover {
+border: 2px solid #eee;
+}
+.pills-outline-green .nav-item .nav-link.active {
+border: 2px solid #4caf50;
+color: #4caf50;
+}
+.pills-outline-green .nav-item .nav-link.active:hover {
+border: 2px solid #4caf50;
+color: #4caf50;
+}
+
+#documents .nav-tabs .nav-link {
+    border: 1px solid #dcdcdc;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+}
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #339;
+    border-color: #333399;
+    font-size: 1.1em;
+}
+
+/* LDS spinner */
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-top:20%
+  }
+  .lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+  }
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #fff;
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

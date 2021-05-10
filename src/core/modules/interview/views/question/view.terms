@@ -1,0 +1,16 @@
+question_header=Interview Question
+create_question=Add Question
+edit_question=Edit Question
+input_parent=Parent Question
+input_question=Question
+input_type=Type
+input_relevance=Question Relevance
+input_more=Which question need short answer
+show_child=Show this question when parent answer is:
+input_help=Question Help
+input_answer_heading=Answer Heading
+input_status=Question Status
+table_select_please= "Please Select"
+table_select_all= "All Type"
+table_status_filter= "Filter by Question Type"
+table_job_filter= "Filter by Job"

@@ -1,0 +1,231 @@
+.carousel-item {
+    height: 500px;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+/* General Stuff */
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.iow-error {
+    color: red;
+    font-weight: bold;
+}
+
+/* Callout boxes 2 May 2015 */
+
+.iow-callout {
+    padding: 5px 5px 5px 20px;
+    margin: 10px 0px;
+    border-width: 1px 1px 1px 5px;
+    border-style: solid;
+    border-color: #EEE;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    border-radius: 3px;
+}
+
+.iow-callout-primary {
+    border-left-color: #337ab7;
+}
+
+.iow-callout-success {
+    border-left-color: #5cb85c;
+}
+
+.iow-callout-info {
+    border-left-color: #5bc0de;
+}
+
+.iow-callout-warning {
+    border-left-color: #f0ad4e;
+}
+
+.iow-callout-danger {
+    border-left-color: #d9534f;
+}
+
+/* Question tree 5 May 2015 */
+
+/* Used in Survey */
+
+.iow-std-box {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.iow-std-box p {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.iow-jstree {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+/* Used for useBSFileInput updated 30 April 2018 */
+
+/*
+.file-preview {
+	background: #ffffff;
+}
+
+.file-preview-frame {
+	width: 165px;
+}
+*/
+
+.file-preview-frame img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    /* width: 100%; */
+}
+
+.kv-file-content {
+    /* needed to show all the buttons and inputs */
+    height: 180px !important;
+    width: 220px !important;
+}
+
+.file-thumbnail-footer {
+    /* needed to show all the buttons and inputs */
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.file-caption {
+    margin-top: 10px !important;
+}
+
+/* stuff to zero padding and margins 2 July 2015 */
+
+.nopadding {
+    padding: 0px !important;
+}
+
+.nomargin {
+    margin: 0px !important;
+}
+
+/* table captions made better */
+table caption {
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+/* search panel in the legend 3 January 2017 */
+.iow-search-input {
+    padding: 10px 0;
+}
+
+.iow-search-input {
+    width: 50%;
+    float: right;
+}
+
+#select_address {
+    border-bottom: black solid 1px;
+    margin-bottom: 10px;
+}
+
+/* Make Radio look like buttons */
+
+.iow-ck-button label:hover {
+    background-color:#e0efe0;
+}
+
+.iow-ck-button {
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    border: 1px solid #D0D0D0;
+    padding:5px;
+    margin:5px 0px;
+}
+
+.iow-ck-button label {
+    width: 100%;
+    margin: 0px;
+}
+
+.iow-ck-button label span {
+    text-align:center;
+    padding:3px 0px;
+    display:block;
+    border-radius:5px;
+}
+
+.iow-ck-button input:hover + span.survey {
+    background-color:#C4FF90;
+}
+
+.iow-ck-button input:checked + span.survey {
+    background-color:#7EC549;
+    color:#fff;
+}
+
+.iow-ck-button input:checked:hover + span.survey {
+    background-color:#82AC62;
+    color:#fff;
+}
+
+/* Class to start hidden and I am using .show() [and .hide() again maybe] added 07 May 2018 */
+
+.not-showing {
+    display: none;
+}
+
+/* Captcha Class MO 20180925 */
+
+.iow-captcha {
+    height: 3rem;
+    border: 2px solid red;
+    padding: 0.5rem;
+}
+
+/* Keywords MO 20181225 */
+.iow-keywords {
+    font-size: small;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/* MDB Stuff */
+
+/* top nav drop down */
+.md-tabs .nav-item.show .nav-link {
+    background-color: transparent;
+    color: #fff;
+}
+
+/* added to make the form more readable */
+label {
+    color: rgba(0, 0, 0, 0.25) !important;
+}
+
+/* reCAPTCHA Badge .. I don't like it */
+.grecaptcha-badge {
+    visibility: hidden;
+}

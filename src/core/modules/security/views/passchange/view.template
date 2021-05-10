@@ -1,0 +1,17 @@
+htm:
+htm:<!-- start view.template -->
+htm:
+htm:<div id="iow-module-security">
+htm:
+htm:<div class="row">
+htm:<div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+htm:
+php:view
+htm:
+htm:</div>
+htm:</div>
+htm:
+htm:</div>
+htm:
+htm:<!-- end of view.template -->
+htm:

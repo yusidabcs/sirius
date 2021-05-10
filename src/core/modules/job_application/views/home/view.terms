@@ -1,0 +1,4 @@
+user_page_header= My Application
+admin_page_header= User Application
+user_no_application= "You haven't applied for job. Please select the available job to apply one."
+admin_no_application= "User haven't applied for job. Please select the available job to apply one."

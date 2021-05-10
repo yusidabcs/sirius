@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<SCHEMA CHARSET="utf8" ENGINE="InnoDB">
+<TABLE NAME="address_book_address" LOCATION="local">
+<STRUCTURE>CREATE TABLE `address_book_address` (
+  `address_book_id` int(11) NOT NULL,
+  `type` enum('main','postal') NOT NULL DEFAULT 'main',
+  `physical_pobox` enum('physical','pobox') NOT NULL DEFAULT 'physical',
+  `care_of` varchar(255) NOT NULL,
+  `line_1` varchar(255) NOT NULL,
+  `line_2` varchar(255) NOT NULL,
+  `suburb` varchar(255) NOT NULL,
+  `state` varchar(3) NOT NULL,
+  `postcode` varchar(15) NOT NULL,
+  `country` varchar(2) NOT NULL,
+  `created_on` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `created_by` int(11) NOT NULL,
+  `modified_on` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `modified_by` int(11) NOT NULL,
+  PRIMARY KEY (`address_book_id`,`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8</STRUCTURE>
+<FIELD NAME="address_book_id">
+<TYPE>int(11)</TYPE>
+<NULL>NO</NULL>
+<KEY>PRI</KEY>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="type">
+<TYPE>enum('main','postal')</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<KEY>PRI</KEY>
+<DEFAULT>main</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="physical_pobox">
+<TYPE>enum('physical','pobox')</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<DEFAULT>physical</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="care_of">
+<TYPE>varchar(255)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="line_1">
+<TYPE>varchar(255)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="line_2">
+<TYPE>varchar(255)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="suburb">
+<TYPE>varchar(255)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="state">
+<TYPE>varchar(3)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="postcode">
+<TYPE>varchar(15)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="country">
+<TYPE>varchar(2)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="created_on">
+<TYPE>timestamp</TYPE>
+<NULL>NO</NULL>
+<DEFAULT>0000-00-00 00:00:00</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="created_by">
+<TYPE>int(11)</TYPE>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="modified_on">
+<TYPE>timestamp</TYPE>
+<NULL>NO</NULL>
+<DEFAULT>0000-00-00 00:00:00</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="modified_by">
+<TYPE>int(11)</TYPE>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+</TABLE>
+</SCHEMA>

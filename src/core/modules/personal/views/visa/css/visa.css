@@ -1,0 +1,31 @@
+input[type='text'] {
+	width: 100%;
+}
+
+/* visa hide at the start */
+#visa_croppie_wrap {
+	display: none;
+	width: 800px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/* hide the wrap number */
+span.value {
+	display: none !important;
+}
+
+.iow-ck-button input:hover + span.visa {
+    background-color:#e0efe0;
+}
+
+.iow-ck-button input:checked + span.visa {
+    background-color:#119911;
+    color:#fff;
+}
+
+.iow-ck-button input:checked:hover + span.visa {
+    background-color:#11cc11;
+    color:#fff;
+}
+

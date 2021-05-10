@@ -1,0 +1,7 @@
+page_header = Reset Password
+username_label = Username
+password_new = New Password
+password_confirm = Confirm Password
+update_pass_button = Change Password
+changed_heading = Success
+changed_information = "Your password has been successfully changed. Please login using your new password."

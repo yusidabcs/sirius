@@ -1,0 +1,14 @@
+header=Create Interview Schedule
+title=Interview Title
+description=Interview Description
+select_partner=Select Organizer
+start_on="Start On"
+finish_on="Finish On"
+address="Address"
+google_map="Google Map"
+select_country="Select Country"
+select_state="Select State"
+status="Status"
+visible="Visible"
+back_btn="Go Back"
+save_btn="Save"

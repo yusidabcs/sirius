@@ -1,0 +1,17 @@
+page_header_list = "Job Category"
+create_job_category = "New Category"
+add_category_title = "New Category Form"
+edit_category_title = "Edit Category Form"
+category_name = "Name (maximum 100 character)"
+category_short_description = "Short Description (maximum 255 character)"
+category_parent = "Parent"
+local_job_header="List Job Category"
+job_category="Job Code"
+banner_image_heading=Banner Image
+avatar_image_heading=Category Image
+banner_image_crop=Crop
+banner_image_choose_file = Select Image
+save_btn = Save
+update_btn = Update
+import_job_category=Import Job Category
+input_import_job_category=Input Job Category Excel

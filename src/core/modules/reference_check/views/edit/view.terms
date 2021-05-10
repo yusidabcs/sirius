@@ -1,0 +1,10 @@
+page_heading = "Edit the Register Info"
+code_label = Code
+type_label = Type
+heading_label = Heading
+short_description_label = "Short Description"
+countries_label = Countries
+country_select = All
+new_legend = "New Code"
+update_button = "Update"
+delete = "Delete"

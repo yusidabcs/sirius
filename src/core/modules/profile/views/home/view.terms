@@ -1,0 +1,17 @@
+button_edit_link = "Update Profile"
+username_label = "Username"
+email_label = "Email"
+update_button = "Update"
+reset_button = "Reset"
+password_current = "Current Password"
+password_new = "New Password"
+password_confirm = "Confirm Password"
+;
+survey_taker_title = "Survey"
+survey_taker_table_heading_title = "Survey Name"
+survey_taker_no_surveys = "No Current Surveys"
+;
+personal_title = "Personal Data"
+profile_title = "Profile Data Incomplete"
+profile_message = "Please complete your profile data such as avatar, your address and telephone number."
+job_title = "Open Positions"

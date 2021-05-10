@@ -1,0 +1,17 @@
+.iow-ck-button label:hover {
+    background-color:#e0efe0;
+}
+
+.iow-ck-button input:hover + span.langlevel {
+    background-color:#e0efe0;
+}
+
+.iow-ck-button input:checked + span.langlevel {
+    background-color:#119911;
+    color:#fff;
+}
+
+.iow-ck-button input:checked:hover + span.langlevel {
+    background-color:#11cc11;
+    color:#fff;
+}

@@ -1,0 +1,11 @@
+header=List Master Course
+create_course=Add New Course
+course_name=Course Name
+short_description=Short Description
+status=Status
+description=Description
+image_course_choose_file=Select Image
+image_course_heading= File Image
+course_image_crop=CROP
+update_course=Update Course
+table_select_status=All Status

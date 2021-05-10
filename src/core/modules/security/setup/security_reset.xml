@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<SCHEMA CHARSET="utf8" ENGINE="InnoDB">
+<TABLE NAME="security_reset" LOCATION="local">
+<STRUCTURE>CREATE TABLE `security_reset` (
+  `reset_code` varchar(32) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `checksum` varchar(32) NOT NULL,
+  PRIMARY KEY (`reset_code`),
+  KEY `checksum` (`checksum`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8</STRUCTURE>
+<FIELD NAME="reset_code">
+<TYPE>varchar(32)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<KEY>PRI</KEY>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="email">
+<TYPE>varchar(255)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="timestamp">
+<TYPE>timestamp</TYPE>
+<NULL>NO</NULL>
+<DEFAULT>CURRENT_TIMESTAMP</DEFAULT>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="checksum">
+<TYPE>varchar(32)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<KEY>MUL</KEY>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+</TABLE>
+</SCHEMA>

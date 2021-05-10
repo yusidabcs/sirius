@@ -1,0 +1,18 @@
+<p>Your {{ site_title }} login and password information is below</p>
+<p>Thank you<br>{{ site_email_name }}</p>
+<table width="100%">
+    <tr>
+        <td width="30%">Login Url:</td><td width="70%"><a href="{{ site_url }}">{{ site_url }}</a></td>
+    </tr>
+    <tr><td width="30%">Username:</td><td width="70%">{{ username }}</td></tr>
+    <tr><td width="30%">Email:</td><td width="70%">{{ email }}</td></tr>
+    <tr><td width="30%">Password:</td><td width="70%">{{ password }}</td></tr>
+
+</table>
+
+<p></p>
+
+<p><strong>Please note</strong> this is the only time your password will be seen in plain text. Please change your password when you first login.</p>
+
+<hr>
+<p><em>This e-mail may contain confidential information, which also may be legally privileged. Only the intended recipient(s) may access, use, distribute or copy this e-mail.  If this e-mail is received in error, please inform the sender by return e-mail and delete the original.  If there are doubts about the validity of this message, please contact the sender.  It is the recipients responsibility to check the e-mail and any attached files for viruses.</em></p>

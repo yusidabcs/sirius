@@ -1,0 +1,10 @@
+page_header = Email Template
+banner_heading = Banner Image
+banner_heading_main = Upload a New Banner
+banner_existing_image_label = Current Image
+banner_input_label = Choose a banner image
+banner_result_button = Review Image
+css_heading = CSS Information
+css_heading_main = CSS3
+css_input_label = Edit current CSS File
+button_add_submit = Update

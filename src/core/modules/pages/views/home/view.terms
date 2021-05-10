@@ -1,0 +1,14 @@
+keywords = "Keywords: "
+feedback_name = "Name:"
+feedback_name_placeholder = "Please enter your name"
+feedback_email = "Email Address:"
+feedback_email_placeholder = "Please enter your email"
+feedback_phone = "Phone Number:"
+feedback_phone_placeholder = "Please enter your phone number (optional)"
+feedback_text = "Feedback:"
+feedback_submitted_heading = Submission Accepted
+feedback_submitted_information = "Your feedback has been successfully submitted and we will reply, if required, shortly."
+feedback_submit = Submit Feedback
+go_edit = "Edit Page Content"
+go_order = "Order Page Content"
+go_back = "Go Back to the Page"

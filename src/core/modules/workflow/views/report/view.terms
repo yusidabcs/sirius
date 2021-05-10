@@ -1,0 +1,11 @@
+header=Tracker Report
+create_new="Add Tracker Report"
+address_book_search="Search Address Book"
+create_report="Create Tracker Report"
+tr_name=Name
+tr_level=Level
+tr_workflow=Workflow
+tr_partner=Partner
+label_address_book=Select Address Book
+label_level=Select Level
+address_book_email_not_found=Address book not found

@@ -1,0 +1,18 @@
+/* General stuff */
+.ajax-indicator-off {
+	color: green;
+	margin-top: 10px;
+	padding: 5px;	
+}
+.sortable-ghost {
+	cursor: move;
+}
+body.dragging, body.dragging * {
+	cursor: move !important;
+}
+
+.dragged {
+	position: absolute;
+	opacity: 0.5;
+	z-index: 2000;
+}

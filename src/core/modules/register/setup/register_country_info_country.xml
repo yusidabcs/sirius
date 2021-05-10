@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<SCHEMA CHARSET="utf8" ENGINE="InnoDB">
+<TABLE NAME="register_country_info_country" LOCATION="local">
+<STRUCTURE>CREATE TABLE `register_country_info_country` (
+  `country` varchar(2) NOT NULL,
+  `code` varchar(8) NOT NULL,
+  PRIMARY KEY (`country`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8</STRUCTURE>
+<FIELD NAME="country">
+<TYPE>varchar(2)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<KEY>PRI</KEY>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+<FIELD NAME="code">
+<TYPE>varchar(8)</TYPE>
+<COLLATION>utf8_general_ci</COLLATION>
+<NULL>NO</NULL>
+<PRIVALEGES>select,insert,update,references</PRIVALEGES>
+</FIELD>
+</TABLE>
+</SCHEMA>

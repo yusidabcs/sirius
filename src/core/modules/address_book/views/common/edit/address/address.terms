@@ -1,0 +1,22 @@
+; Address Book Address
+address_heading = Address
+address_heading_main = Main Address Details
+address_heading_second = Postal Address Details
+address_physical_pobox = Destination
+address_physical_only = 'Physical Address Only - No PO Boxes'
+address_physical = Physical Address
+address_pobox = PO Box
+address_country = Country
+address_care_of = Care Of
+address_line_1_physical = 'Street Name'
+address_line_1_pobox = PO Box
+address_line_2 = 'House Number/Block'
+address_suburb = "Suburb/Town"
+address_state = State
+address_state_default = 'No State Selected'
+address_postcode = Postcode
+address_latitude = Latitude Point
+address_longitude = Longitude Point
+address_same = Same as Above
+address_country_search= Search country
+address_state_search= Search state

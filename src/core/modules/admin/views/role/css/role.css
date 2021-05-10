@@ -1,0 +1,85 @@
+.active-amber-textarea.md-form label.active {
+    color: #ffa000;
+}
+.amber-textarea textarea.md-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #ffa000;
+    box-shadow: 0 1px 0 0 #ffa000;
+}
+.amber-textarea.md-form .prefix.active {
+    color: #ffa000;
+}
+
+.active-amber-textarea-2 textarea.md-textarea {
+    border-bottom: 1px solid #ffa000;
+    box-shadow: 0 1px 0 0 #ffa000;
+}
+.active-amber-textarea-2.md-form label.active {
+    color: #ffa000;
+}
+.active-amber-textarea-2.md-form label {
+    color: #ffa000;
+}
+.active-amber-textarea-2.md-form .prefix {
+    color: #ffa000;
+}
+
+ table.permission-table th, table.permission-table td {
+    padding-top: 0.6rem;
+    padding-bottom: 0.7rem;
+}
+
+table.permission-table .custom-checkbox .custom-control-label{
+    cursor: pointer;
+}
+
+table.permission-table tr.bg-module {
+    background-color: #33b5e5;
+    color : #fff;
+}
+
+table.permission-table tr.bg-module:hover {
+    background-color: #33b5e5;
+    color : #fff;
+}
+
+table.permission-table tr.bg-header {
+    background-color: #339;
+    color : #fff;
+    
+}
+
+table.permission-table tr.bg-header th {
+    font-weight: 800;
+    font-size: larger;
+}
+table.permission-table tr.bg-header:hover {
+    background-color: #339;
+    color : #fff;
+}
+
+table.permission-table tr.parent {
+    cursor: pointer;
+}
+
+table.permission-table tr th {
+    background-color: #339;
+    position: sticky;
+    top: 0; /* Don't forget this, required for the stickiness */
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+table.permission-table tr.hover-action td span.value-action {
+    font-style: italic;
+}
+/*table.permission-table tr.hover-action:hover > td span.link-action {
+    text-decoration: underline;
+}
+
+table.permission-table tr.hover-action td span.value-action {
+    display: none;
+}
+
+table.permission-table tr.hover-action:hover > td span.value-action {
+    display: inline;
+}*/

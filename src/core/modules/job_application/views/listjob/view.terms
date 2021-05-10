@@ -1,0 +1,13 @@
+page_header= Available Job
+table_select_please="All Category"
+table_category_filter="Filter by Category"
+stcw_req="Need STCW Document"
+pre_min_education="Minimum "
+post_min_education=" Education"
+post_english_experience=" Year English Experience"
+post_experience="Job Experience"
+apply="Apply Now"
+job_requirement="Job Requirement"
+start_from="Start from USD "
+no_available_job="There are no job applications based on your personal data, please complete all minimum requirements to apply for a job."
+no_available_job_recruitment="There are no job applications based on user personal data, please complete all minimum requirements to apply for a job."

@@ -1,0 +1,26 @@
+page_header = "Core Administration"
+;
+; log
+tab_log = "Log"
+legend_log = "Log Information"
+;
+; system ini
+tab_system_ini = "INI"
+legend_system_ini = "Synchronise INI Files"
+submit_system_ini = "Update INI Files"
+;
+; db_update
+tab_db_update = "DB Update"
+legend_db_update = "Synchronise all DB Tables"
+submit_db_update = "Update DB Tables"
+;
+; file manager
+tab_file_manager = "File Manager"
+legend_file_manager = "File Manager Admin"
+submit_file_manager_clean = "Clean File Manager"
+submit_file_manager_storage = "Setup File Manager Storage"
+;
+; clear cache
+tab_clear_caches = "Clear Caches"
+legend_clear_caches = "Cache Admin"
+submit_clear_caches = "Clear Caches Now"

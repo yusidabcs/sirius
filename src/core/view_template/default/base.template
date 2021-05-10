@@ -1,0 +1,15 @@
+htm:
+php:pageNav
+htm:
+htm:<!--Main layout-->
+htm:<main class="mt-md-3">
+htm:<div class="main container-fluid">
+htm:<div class="pt-3 p-md-0">
+mod:mainSection
+htm:</div>
+htm:</div>
+htm:</main>
+htm:<!--Main layout-->
+htm:
+php:pageFooter
+htm:

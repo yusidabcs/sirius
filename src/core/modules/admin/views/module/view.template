@@ -1,0 +1,9 @@
+htm:
+htm:<!-- start view.template -->
+htm:
+htm:<div id="iow-module-admin">
+php:view
+htm:</div>
+htm:
+htm:<!-- end of view.template -->
+htm:

@@ -1,0 +1,41 @@
+input[type='text'] {
+	width: 100%;
+}
+
+/* general hide at the start */
+#general_croppie_wrap {
+	display: none;
+	width: 600px;
+    height: 850px;
+    margin: 0 auto;
+}
+
+/* hide the wrap number */
+span.value {
+	display: none !important;
+}
+
+.iow-ck-button label:hover {
+    background-color:#e0efe0;
+}
+
+.iow-ck-button input:hover + span.general {
+    background-color:#e0efe0;
+}
+
+.iow-ck-button input:checked + span.general {
+    background-color:#119911;
+    color:#fff;
+}
+
+.iow-ck-button input:checked:hover + span.general {
+    background-color:#11cc11;
+    color:#fff;
+}
+
+.roundBox {
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid grey;
+	border-radius: 20px;
+}
